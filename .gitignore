@@ -1,16 +1,37 @@
-# Compiled class file
+# --- 基础环境：macOS & 系统 ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+*.icloud
+
+# --- IDE：IntelliJ IDEA (针对 IdeaProjects 路径) ---
+.idea/
+*.iml
+*.iws
+out/
+gen/
+# 如果想保留运行配置，可以取消下面两行的注释
+# !.idea/runConfigurations
+# !.idea/codeStyles
+
+# --- IDE：Cursor / VS Code ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+.cursor/
+.vscode/
+
+# --- 开发语言：Java & Maven ---
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,7 +39,23 @@
 *.zip
 *.tar.gz
 *.rar
+# Maven 构建输出
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+release.properties
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# --- 数据库：Redis ---
+*.rdb
+
+# --- 敏感信息与本地配置（强烈建议手动加上） ---
+.env
+.env.*
+# Spring Boot 本地配置文件
+application-local.yml
+application-local.properties
+
+# --- 临时文件与崩溃日志 ---
 hs_err_pid*
 replay_pid*
+.mtj.tmp/
